@@ -1,0 +1,241 @@
+.main-content {
+    font-family:Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-size:15px;
+    letter-spacing:normal;
+    line-height:16px
+}
+.header-data {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 14px;
+}
+.header-data a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87);
+}
+.header-data.header-link:first-child {
+    padding-left: 0;
+}
+.header-link {
+    display: inline-block;
+}
+.google-offer {
+    font-size:small;
+    margin-top: 50px;
+    margin-bottom:20px
+}
+
+.google-offered-in {
+    display: inline-block;
+    line-height: 28px;
+    text-decoration: none;
+}
+
+.google-offered-in a {
+    padding:0 3px;
+    text-decoration: none;
+}
+
+
+.footer {
+    font-family:Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    background: #f2f2f2;
+    line-height: 40px;
+    color: #5f6368;
+    min-width: 980px;
+    border-top: 1px solid #e4e4e4;
+
+}
+.foot {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    line-height: 40px;
+}
+.foot a {
+    text-decoration:  none;
+    white-space: nowrap;
+    color: #5f6368;
+
+}
+.footer-content {
+    margin-left: 30px;
+    text-align: left;
+}
+.ml-30 {
+    margin-left: 30px;
+}
+.float-right-w-mr {
+    float: right;
+    white-space: nowrap;
+    margin-right: 30px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mb-30 {
+    margin-bottom: 10px;
+}
+.lnk-txt {
+    padding-left: 27px;
+    margin: 0 !important;
+}
+.m-wrap {
+    white-space: nowrap;
+}
+.user-loc {
+    font-size: 15px;
+}
+.user-loc-holder {
+    border-bottom: 1px solid #e4e4e4;
+}
+input[type="submit"], input[type="button"] {
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    outline: none;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+.offset {
+    margin-left: 30%;
+}
+
+
+.search-view {
+    width: 85%;
+    height: 42.5px;
+    margin: auto;
+}
+
+.search-view input {
+    height: 42.5px;
+}
+
+
+
+
+.header-search {
+    width: 50%;
+    outline: none;
+    height: 29px;
+    /*border: none;*/
+    padding: 0 14px;
+    /*margin-left: 30%;*/
+    /*border-radius: 17px;*/
+    border-right: none;
+    border-left: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+
+    /*background-color: #ffffff;*/
+
+    color: rgba(0,0,0,.87);
+    word-wrap: break-word;
+    font-size: 16px;
+
+
+}
+
+
+
+
+
+
+
+
+
+.group-input-field {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+
+.group-input-field-prepend,
+.group-input-field-append {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+.group-input-field-append .btn + .group-text {
+    margin-left: -2px;
+}
+
+.group-input-field-prepend {
+    margin-right: -2px;
+}
+
+.group-input-field-append {
+    margin-left: -2px;
+}
+
+.group-text {
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0.375rem 0.75rem;
+    margin-bottom: 0;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    /*background-color: #e9ecef;*/
+    /*border: 1px solid #ddd;*/
+
+
+
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-radius: 50%;
+}
+
+
+
+.group-input-field > .group-input-field-append > .group-text,
+.group-input-field > .group-input-field-prepend:not(:first-child) > .group-text,
+.group-input-field > .group-input-field-prepend:first-child > .group-text:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.group-input-field > .group-input-field-prepend > .group-text,
+.group-input-field > .group-input-field-append:not(:last-child) > .group-text,
+.group-input-field > .group-input-field-append:last-child > .group-text:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+
+.display-none {
+    display: none;
+}
+.display-block {
+    display: block;
+}
