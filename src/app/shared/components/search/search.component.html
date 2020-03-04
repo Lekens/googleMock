@@ -1,0 +1,77 @@
+<div id="searchPage">
+  <div class="mt-3" *ngIf="!loaders.isDomShown">
+    <div class="input-group mb-3 col-5 input-group-custom" style="">
+      <div class="input-group-prepend" >
+        <span class="input-group-text bg-white input-group-text-custom" style="">
+         <!--<img src="../../../../assets/images/search.png">-->
+        <i class="fa fa-search text-grey"></i>
+         </span>
+      </div>
+      <input type="search" [(ngModel)]="searchText" [ngModelOptions]="{standalone: true}" (focus)="performSearch()" (change)="performSearch()"  class="form-control header-search header-searcher" style="">
+      <div class="input-group-append">
+        <span class="input-group-text bg-white input-group-text-new" style="">
+          <img src="http://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png" width="19"></span>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="loaders.isDomShown" class="mt-3">
+    <div class="input-group mb-3 col-5 input-grup" style="">
+      <div class="input-group-prepend" style="" >
+        <span class="input-group-text bg-white input-group-text-second" style="">
+         <!--<img src="../../../../assets/images/search.png">-->
+                  <i class="fa fa-search text-grey"></i>
+
+         </span>
+      </div>
+      <input type="search" [(ngModel)]="searchText" [ngModelOptions]="{standalone: true}" (keyup)="performSearch()" (change)="performSearch()" #searchInput
+             class="form-control header-search header-search-form" style="">
+      <div class="input-group-append">
+        <span class="input-group-text bg-white input-group-text-3" style="">
+          <img src="http://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png" width="19"></span>
+      </div>
+    </div>
+    <div class="mb-3 mt--4 search-result-div" style="">
+      <div  class="text-left">
+      <div class="bg-white input-search-bar">
+       <div class="px-2">
+         <hr>
+        <ul class="list-suggestion" style="">
+          <li class="text-left" *ngFor="let data of matchedData;let i = index" [id]="'data-' + i">
+            <div>
+            <span class="float-left"><i class="fa fa-clock-o text-grey"></i></span>
+              <span class="mx-2 px-2 text-blue search-text-suggested">{{data.text}}</span>
+              <span class="text-center float-right mr-2"><a href="javascript:void(0)" class="remove-suggestion">Remove</a></span>
+          </div>
+          </li>
+          <li class="text-left"  *ngFor="let alreadySearched of alreadySearchedData;let j = index" [id]="'alreadySearched-' + j">
+            <div>
+            <span class="float-left"><i class="fa fa-search text-grey"></i></span>
+              <span class="mx-2 px-2 text-dark search-text-suggested">{{ alreadySearched.text }}</span>
+              <!--<span class="text-center float-right mr-2"><a href="javascript:void(0)" class="remove-suggestion">Remove</a></span>-->
+          </div>
+          </li>
+        </ul>
+         <div class="mt-5">
+           <div class="text-center">
+             <input value="Google Search" type="submit" class="btn btn-default">
+             <input value="I'm Feeling Lucky" type="button" class="btn btn-default">
+           </div>
+         </div>
+       </div>
+      </div>
+
+    </div>
+    </div>
+
+  </div>
+
+
+  <div class="mb-2" style="z-index: -9099!important;" *ngIf="!loaders.isDomShown">
+    <input value="Google Search" type="submit" class="btn btn-default">
+    <input value="I'm Feeling Lucky" type="button" class="btn btn-default">
+  </div>
+</div>
+
+
+
+<app-language *ngIf="!loaders.isDomShown"></app-language>
